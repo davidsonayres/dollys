@@ -1,0 +1,116 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+/*html {
+  width: 100%;
+  height: 100%;
+  background-image: url('images/DollysBackground1.jpg');
+  background-size: contain;
+  background-repeat: no-repeat;
+}*/
+
+body {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+div.background_image {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: -10;
+}
+
+div.background_image img {
+  width: 110%;
+  margin-top: -10%;
+  margin-left: -7%;
+}
+
+div.bar {
+  height: 60px;
+  width: 100%;
+  background-color: grey;
+  border-bottom: 2px solid red;
+  position: fixed;
+}
+
+nav {
+  height: 14%;
+  background-color: black;
+  color: white;
+  position: fixed;
+  width: 100%;
+  opacity: 0.4;
+  margin-top: 62px;
+}
+
+div.slogan {
+  height: 100%;
+  width: 25%;
+  overflow: hidden;
+  position: relative;
+  padding: 1%;
+  display: inline-block;
+}
+
+div.slogan_top {
+  overflow: hidden;
+}
+
+div.slogan_top img {
+  width: 125%;
+  margin-left: -2%;
+}
+
+div.block {
+  position: absolute;
+  height: 57%;
+  width: 45%;
+  background-color: black;
+  right: 0;
+  top: 0;
+}
+
+div.slogan_bottom {
+  overflow: hidden;
+  margin-top: -2%;
+}
+
+div.slogan_bottom img {
+  width: 125%;
+  margin-left: -56.5%;
+}
+
+div.nav_items {
+  width: 70%;
+  height: 100%;
+  display: inline-block;
+  position: absolute;
+  right: 0;
+  padding: 2% 5% 2% 2%;
+  text-align: right;
+}
+
+div.nav_items p {
+  display: inline;
+  margin: 2%;
+}
+
+div.hair {
+  position: fixed;
+  width: 40%;
+  height: 45%;
+  bottom: 0;
+  right: 0;
+  overflow: hidden;
+  opacity: 0.7;
+}
+
+div.hair img {
+  left: 0;
+  width: 150%;
+}
