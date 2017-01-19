@@ -8,6 +8,7 @@ body {
   height: 100%;
   position: relative;
   color: white;
+  font-family: 'Abril Fatface';
 }
 
 div.background_image {
@@ -29,6 +30,7 @@ div.bar {
   background-color: grey;
   border-bottom: 2px solid red;
   position: fixed;
+  z-index: 1000;
 }
 
 div.nav_background {
@@ -46,6 +48,7 @@ nav {
   width: 100%;
   opacity: 0.7;
   margin-top: 62px;
+  z-index: 1000;
 }
 
 div.slogan {
@@ -115,12 +118,65 @@ div.hair img {
   width: 150%;
 }
 
+div.reservations_wrapper {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+div#reservations {
+  width: 100%;
+  height: 50%;
+  margin-top: 50%;
+  position: absolute;
+}
+
+div.reservations {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  height: 270px;
+  margin: 21% auto;
+  text-align: center;
+  opacity: 0.7;
+}
+
+div.reservation_background {
+  position: absolute;
+  width: 100%;
+  height: 270px;
+  margin: 18% auto;
+  background-color: black;
+  top: 0;
+  opacity: 0.7;
+}
+
+div.hours {
+  width: 22%;
+  margin: 0 auto 4%;
+  text-align: left;
+}
+
+div.contact_wrapper {
+  width: 100%;
+  height: 100%;
+  margin-top: 100%;
+  position: absolute;
+}
+
+div#contact {
+  width: 100%;
+  height: 50%;
+  margin-top: 50%;
+  position: absolute;
+}
+
 div.contact {
   position: relative;
   display: inline-block;
   width: 100%;
-  height: 45%;
-  margin: 102.5% auto 100%;
+  height: 270px;
+  margin: 21% auto;
   text-align: center;
   opacity: 0.7;
 }
@@ -129,14 +185,8 @@ div.contact_background {
   position: absolute;
   width: 100%;
   height: 270px;
-  margin: 100% auto;
+  margin: 18% auto;
   background-color: black;
   top: 0;
   opacity: 0.7;
-}
-
-div.hours {
-  width: 25%;
-  margin: 4% auto;
-  text-align: left;
 }
