@@ -8,7 +8,7 @@ body {
   height: 100%;
   position: relative;
   color: white;
-  font-family: 'Abril Fatface';
+  font-family: 'Elsie';
 }
 
 div.background_image {
@@ -203,4 +203,21 @@ div.contact_background {
 a,
 a:visited {
   color: white;
+}
+
+
+h1.one {
+  font-family: 'Elsie';
+}
+
+h1.two {
+  font-family: 'Rufina';
+}
+
+h1.three {
+  font-family: 'Oranienbaum';
+}
+
+h1 {
+  margin: 2%;
 }
