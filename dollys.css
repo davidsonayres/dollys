@@ -225,6 +225,11 @@ div.contact_background {
   opacity: 0.7;
 }
 
+div.contact p {
+  margin: 3%;
+  font-size: 1.25em;
+}
+
 a,
 a:visited {
   color: white;
