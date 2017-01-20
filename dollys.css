@@ -118,6 +118,15 @@ div.hair img {
   width: 150%;
 }
 
+div.body_wrap {
+  width: 100%;
+  height: 80%;
+  /*border: 1px solid white;*/
+  margin-top: 150px;
+  position: fixed;
+  overflow: scroll;
+}
+
 div.reservations_wrapper {
   width: 100%;
   height: 100%;
