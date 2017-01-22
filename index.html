@@ -62,20 +62,20 @@
       </div>
     </div>
     <script>
-    $(function() {
-      $('a[href*="#"]:not([href="#"])').click(function() {
-        if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-          var target = $(this.hash);
-          target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-          if (target.length) {
-            $('.body_wrap').animate({
-              scrollTop: $('.body_wrap').scrollTop() + target.offset().top
-            }, 1000);
-            return false;
+      $(document).ready(function() {
+        $('a[href*="#"]:not([href="#"])').click(function() {
+          if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+            var target = $(this.hash);
+            target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+            if (target.length) {
+              $('.body_wrap').animate({
+                scrollTop: $('.body_wrap').scrollTop() + target.offset().top
+              }, 1000);
+              return false;
+            }
           }
-        }
+        })
       });
-    });
     </script>
     </body>
 </html>
