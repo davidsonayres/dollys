@@ -6,6 +6,7 @@
     <link type="text/css" rel="stylesheet" href="dollys.css">
     <link href="https://fonts.googleapis.com/css?family=Elsie" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    <script type="text/javascript">var $j = jQuery.noConflict();</script>
     <title></title>
   </head>
   <body>
@@ -62,14 +63,14 @@
       </div>
     </div>
     <script>
-      $(document).ready(function() {
-        $('a[href*="#"]:not([href="#"])').click(function() {
+      $j(document).ready(function() {
+        $j('a[href*="#"]:not([href="#"])').click(function() {
           if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
             var target = $(this.hash);
-            target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+            target = target.length ? target : $j('[name=' + this.hash.slice(1) +']');
             if (target.length) {
-              $('.body_wrap').animate({
-                scrollTop: $('.body_wrap').scrollTop() + target.offset().top
+              $j('.body_wrap').animate({
+                scrollTop: $j('.body_wrap').scrollTop() + target.offset().top
               }, 1000);
               return false;
             }
