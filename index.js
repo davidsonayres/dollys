@@ -5,7 +5,7 @@ $j(function() {
     $j('body').css('background-image', 'url("images/DollysBackground2.jpg")')
     $j.ajax({
       url: 'hours',
-      method: 'POST',
+      method: 'PUT',
       dataType: 'html'
     }).done(function(responseData){
       console.log(responseData);
@@ -17,7 +17,7 @@ $j(function() {
     $j('body').css('background-image', 'url("images/DollysBackground3.jpg")')
     $j.ajax({
       url: 'menus',
-      method: 'POST',
+      method: 'PUT',
       dataType: 'html'
     }).done(function(responseData){
       console.log(responseData);
@@ -29,7 +29,7 @@ $j(function() {
     $j('body').css('background-image', 'url("images/DollysBackground4.jpg")')
     $j.ajax({
       url: 'contact',
-      method: 'POST',
+      method: 'PUT',
       dataType: 'html'
     }).done(function(responseData){
       console.log(responseData);
