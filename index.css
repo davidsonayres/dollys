@@ -2,4 +2,77 @@
   box-sizing: border-box;
   margin: 0;
   font-family: 'Montserrat', sans-serif;
+  color: white;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-image: url(images/DollysBackground1.jpg);
+  background-size: 85%;
+  /*background-repeat: no-repeat;*/
+  background-position: 55% 55%,
+                       top;
+  background-attachment: fixed;
+  overflow: hidden;
+}
+
+div.top_side_border {
+  margin: 4%;
+  border: 8px solid white;
+  border-bottom: 0px;
+  opacity: 0.4;
+  position: absolute;
+  width: 92%;
+  height: 82%;
+}
+
+img.slogan {
+  width: 20%;
+  position: absolute;
+  margin: 7% 5%;
+  opacity: 0.9;
+}
+
+nav {
+  position: absolute;
+  bottom: 13%;
+  right: 6%;
+  display: inline;
+  text-align: right;
+}
+
+div.bottom_left_border {
+  height: 8px;
+  background-color: white;
+  opacity: 0.4;
+  width: 30%;
+  position: absolute;
+  bottom: 10.4%;
+  left: 4.6%;
+}
+
+div.bottom_right_border {
+  height: 8px;
+  background-color: white;
+  opacity: 0.4;
+  width: 30%;
+  position: absolute;
+  bottom: 10.4%;
+  right: 4.6%;
+}
+
+div.dolly {
+  width: 32%;
+  position: relative;
+  margin-left: 33%;
+  margin-right: auto;
+  margin-top: 35%;
+}
+
+div.dolly img {
+  width: 100%;
+  height: 100%;
+  opacity: 0.4;
 }
