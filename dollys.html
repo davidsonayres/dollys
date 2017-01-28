@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width" />
+    <link type="text/css" rel="stylesheet" href="dollys.css">
+    <link href="https://fonts.googleapis.com/css?family=Elsie" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    <script type="text/javascript">var $j = jQuery.noConflict();</script>
+    <title></title>
+  </head>
+  <body>
+    <div class="nav_background"></div>
+    <nav>
+      <div class="slogan">
+        <img src="images/MojitoBar2-01.svg">
+      </div>
+      <div class="nav_items">
+        <p>1285 BLOOR STREET WEST</p>
+        <p><a href="images/Dinner_Menu.pdf" target="_blank">DINNER MENU</a></p>
+        <p><a href="images/Drink_Menu.pdf" target="_blank">BEVERAGE LIST</a></p>
+        <p><a href="#reservations">RESERVATIONS</a></p>
+        <p><a href="#contact">CONTACT</a></p>
+      </div>
+    </nav>
+    <div class="hair">
+      <img src="images/DollysFace.png">
+    </div>
+    <div class="background_image">
+      <img src="images/DollysBackground1.jpg">
+    </div>
+    <div class="body_wrap">
+      <div class="reservations_wrapper">
+        <div id="reservations">
+          <div class="reservation_background"></div>
+          <div class="reservations">
+            <div class="hours_of_operation">
+              <h2>HOURS</h2>
+              <div class="days">
+                <h2><span class="min">TUE - WED</span></h2>
+                <h2><span class="min">THU - SAT</span></h2>
+                <h2><span class="min">SUN - MON</span></h2>
+              </div>
+              <div class="hours">
+                <h2><span class="min">PM TO </span>11<span class="min">PM</span></h2>
+                <h2><span class="min">PM TO </span>2<span class="min">AM</span></h2>
+                <h2><span class="min">CLOSED</span></h2>
+              </div>
+            </div>
+            <div style="width:600px; display:inline-block"><script id="bookenda_script_tag_mvcbooker_1row" src="https://www.bookenda.com/Public/MVCBooker.aspx?format=1Row&name=dollys-mojito-bar&Language=en&idClientApplication=6744&force=true" type="text/javascript"></script></div>
+          </div>
+        </div>
+      </div>
+      <div class="contact_wrapper">
+        <div id="contact">
+          <div class="contact_background"></div>
+          <div class="contact">
+            <h2>CONTACT</h2>
+            <p>1285 Bloor St W</br>Toronto, ON</br>M6H 1N7
+            <p>t (416) 551 0355</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      $j(document).ready(function() {
+        $j('a[href*="#"]:not([href="#"])').click(function() {
+          if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+            var target = $(this.hash);
+            target = target.length ? target : $j('[name=' + this.hash.slice(1) +']');
+            if (target.length) {
+              $j('.body_wrap').animate({
+                scrollTop: $j('.body_wrap').scrollTop() + target.offset().top
+              }, 1000);
+              return false;
+            }
+          }
+        })
+      });
+    </script>
+    </body>
+</html>
