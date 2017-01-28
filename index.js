@@ -4,7 +4,7 @@ $j(function() {
   $j('#hours').hover(function() {
     $j('body').css('background-image', 'url("images/DollysBackground2.jpg")')
     $j.ajax({
-      url: '_hours',
+      url: 'hours',
       method: 'POST',
       dataType: 'html'
     }).done(function(responseData){
@@ -16,7 +16,7 @@ $j(function() {
   $j('#menus').hover(function() {
     $j('body').css('background-image', 'url("images/DollysBackground3.jpg")')
     $j.ajax({
-      url: '_menus',
+      url: 'menus',
       method: 'POST',
       dataType: 'html'
     }).done(function(responseData){
@@ -28,7 +28,7 @@ $j(function() {
   $j('#contact').hover(function() {
     $j('body').css('background-image', 'url("images/DollysBackground4.jpg")')
     $j.ajax({
-      url: '_contact',
+      url: 'contact',
       method: 'POST',
       dataType: 'html'
     }).done(function(responseData){
