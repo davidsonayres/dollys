@@ -101,6 +101,9 @@ div.info {
   margin-bottom: 15%;
   position: relative;
   width: 100%;
+  line-height: 1.5;
+  margin-bottom: 7%;
+  font-size: 0.85em;
 }
 
 div.logo {
@@ -113,10 +116,4 @@ div.logo img {
   margin: 0 -7.5% -16%;
   width: 65%;
   opacity: 0.6;
-}
-
-div.info p {
-  line-height: 1.5;
-  margin-bottom: 7%;
-  font-size: 0.85em;
 }
