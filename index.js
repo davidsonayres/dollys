@@ -11,7 +11,7 @@ $j(function() {
     //   console.log(responseData);
     //   $j('#info').html(responseData);
     // });
-    $("#info").load("_hours");
+    $j("#info").load("_hours");
 // });
   });
 
@@ -25,7 +25,7 @@ $j(function() {
     //   console.log(responseData);
     //   $j('#info').html(responseData);
     // });
-    $("#info").load("_menus");
+    $j("#info").load("_menus");
   });
 
   $j('#contact').hover(function() {
@@ -38,6 +38,6 @@ $j(function() {
     //   console.log(responseData);
     //   $j('#info').html(responseData);
     // });
-    $("#info").load("_contact");
+    $j("#info").load("_contact");
   });
 })
