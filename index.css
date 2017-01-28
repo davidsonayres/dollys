@@ -3,6 +3,7 @@
   margin: 0;
   font-family: 'Montserrat', sans-serif;
   color: white;
+  text-decoration: none;
 }
 
 body {
@@ -85,16 +86,37 @@ div.dolly img:hover {
 
 nav h1 {
   position: relative;
-}
-
-nav h1:hover {
   opacity: 0.4;
 }
 
-nav h1:active {
-  opacity: 0.4
+nav h1:hover {
+  opacity: 1;
 }
 
 div.image_cache {
   display: none;
+}
+
+div.info {
+  margin-bottom: 15%;
+  position: relative;
+  width: 100%;
+}
+
+div.logo {
+  width: 100%;
+  height: 100px;
+  overflow: hidden;
+}
+
+div.logo img {
+  margin: 0 -7.5% -16%;
+  width: 65%;
+  opacity: 0.6;
+}
+
+div.info p {
+  line-height: 1.5;
+  margin-bottom: 7%;
+  font-size: 0.85em;
 }
