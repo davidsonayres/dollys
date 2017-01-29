@@ -96,6 +96,7 @@ div#info {
   margin-bottom: 15%;
   position: relative;
   width: 100%;
+  transition: all 2s ease;
 }
 
 div.logo {
