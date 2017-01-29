@@ -10,11 +10,6 @@ body {
   width: 100%;
   height: 100%;
   position: absolute;
-  background-image: url(images/DollysBackground1.jpg);
-  background-size: 85%;
-  background-position: 55% 55%,
-                       top;
-  background-attachment: fixed;
   overflow: hidden;
 }
 
@@ -119,4 +114,44 @@ div#info p {
   line-height: 1.5;
   margin-bottom: 7%;
   font-size: 0.85em;
+}
+
+div#page_wrapper {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  transition: all 2s ease;
+  background-image: url(images/DollysBackground1.jpg);
+  background-size: 85%;
+  background-position: 55% 55%,
+                       top;
+  background-attachment: fixed;
+}
+
+div#reservations_wrapper {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  margin-top: 100%;
+  transition: all 2s ease;
+}
+
+div.bookenda {
+  margin: 20% 26.5%;
+}
+
+div#bookenda_script_tag_mvcbooker_1row {
+  color: red;
+}
+
+button#ypdine_1row_btnFind {
+  color: white;
+  background-color: red;
+  border: red;
+}
+
+#ypdine_1row_lstPersonCount,
+#ypdine_1row_txtDateDisplay,
+#ypdine_1row_lstTime {
+  color: red;
 }
