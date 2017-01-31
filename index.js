@@ -21,9 +21,12 @@ $j(function() {
     $j('#page_wrapper').css('filter', 'blur(3px)')
   });
 
-  $j('#reservations_wrapper').on('click', function() {
-    $j('#reservations_wrapper').css('margin-top', '100%');
-    $j('#page_wrapper').css('filter', 'blur(0px)')
+  $j('#reservations_wrapper').on('click', function(e) {
+    if (e.target !== this)
+      return;
+    else
+      $j('#reservations_wrapper').css('margin-top', '100%');
+      $j('#page_wrapper').css('filter', 'blur(0px)');
   });
 
 })
