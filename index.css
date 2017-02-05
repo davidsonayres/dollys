@@ -16,7 +16,7 @@ body {
 
 div#slogan {
   width: 100%;
-  position: relative;
+  position: absolute;
 }
 
 @media only screen and (min-device-width: 768px ) {
@@ -177,6 +177,20 @@ div#slogan {
     display: none;
   }
 
+  div#page_wrapper {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    transition: all 2s ease;
+    background-image: url(images/DollysBackground1.jpg);
+    background-size: 170%;
+    background-position: 39% 0%,
+                         center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    overflow: hidden;
+  }
+
   div#slogan {
     height: 10%;
     margin: 10% auto auto 10%;
@@ -189,50 +203,31 @@ div#slogan {
     display: inline-block;
   }
 
-  div.menu_button div:first-child {
-    margin-top: 10%;
-  }
-
   div.menu_button div {
     width: 100%;
-    height: 12%;
-    margin-bottom: 10%;
+    height: 15%;
+    margin-bottom: 14%;
     background-color: white;
     border-radius: 100px;
   }
 
   img.slogan {
-    width: 30%;
+    /*width: 30%;*/
+    width: 20%;
     position: relative;
-    margin: 0 3%;
-  }
-
-  div#page_wrapper {
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    transition: all 2s ease;
-    background-image: url(images/DollysBackground1.jpg);
-    background-size: 170%;
-    background-position: 45% 0%,
-                         center;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-  }
-
-  nav {
-    position: absolute;
-    bottom: 13%;
-    right: 6%;
-    display: none;
-    text-align: right;
+    /*margin: 0 3%;*/
+    margin: -5% auto -6%;
   }
 
   div.dolly {
     width: 90%;
     position: absolute;
-    margin: 5% auto auto 5%;
-    bottom: -43%;
+    /*bottom: -45%;
+    left: 5%;*/
+
+    bottom: -62%;
+    right: -25%;
+    transition: all 2s ease;
   }
 
   div.dolly img {
@@ -242,19 +237,18 @@ div#slogan {
     transition: all 2s ease;
   }
 
-  div.dolly img:hover {
-    margin-top: -20%;
-    margin-left: 3%;
-
+  nav {
+    position: absolute;
+    /*display: none;*/
+    text-align: left;
+    bottom: 12%;
+    left: 4%;
+    font-size: 2.75em;
   }
 
   nav h1 {
     position: relative;
     opacity: 0.4;
-  }
-
-  nav h1:hover {
-    opacity: 1;
   }
 
   div.image_cache {
