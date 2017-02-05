@@ -11,9 +11,19 @@ body {
   height: 100%;
   position: absolute;
   overflow: hidden;
+  background-color: black;
+}
+
+div#slogan {
+  width: 100%;
+  position: relative;
 }
 
 @media only screen and (min-device-width: 768px ) {
+
+  div.menu_button {
+    display: none;
+  }
 
   div.top_side_border {
     margin: 4%;
@@ -160,5 +170,150 @@ body {
 }
 
 @media only screen and (max-device-width: 767px ) {
+
+  div.top_side_border,
+  div.bottom_left_border,
+  div.bottom_right_border {
+    display: none;
+  }
+
+  div#slogan {
+    height: 10%;
+    margin: 10% auto auto 10%;
+  }
+
+  div.menu_button {
+    width: 12%;
+    height: 60%;
+    position: relative;
+    display: inline-block;
+  }
+
+  div.menu_button div:first-child {
+    margin-top: 10%;
+  }
+
+  div.menu_button div {
+    width: 100%;
+    height: 12%;
+    margin-bottom: 10%;
+    background-color: white;
+    border-radius: 100px;
+  }
+
+  img.slogan {
+    width: 30%;
+    position: relative;
+    margin: 0 3%;
+  }
+
+  div#page_wrapper {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    transition: all 2s ease;
+    background-image: url(images/DollysBackground1.jpg);
+    background-size: 170%;
+    background-position: 45% 0%,
+                         center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+  }
+
+  nav {
+    position: absolute;
+    bottom: 13%;
+    right: 6%;
+    display: none;
+    text-align: right;
+  }
+
+  div.dolly {
+    width: 90%;
+    position: absolute;
+    margin: 5% auto auto 5%;
+    bottom: -43%;
+  }
+
+  div.dolly img {
+    width: 100%;
+    height: 100%;
+    opacity: 0.4;
+    transition: all 2s ease;
+  }
+
+  div.dolly img:hover {
+    margin-top: -20%;
+    margin-left: 3%;
+
+  }
+
+  nav h1 {
+    position: relative;
+    opacity: 0.4;
+  }
+
+  nav h1:hover {
+    opacity: 1;
+  }
+
+  div.image_cache {
+    display: none;
+  }
+
+  div#info {
+    margin-bottom: 15%;
+    position: relative;
+    width: 100%;
+    transition: all 2s ease;
+  }
+
+  div.logo {
+    width: 100%;
+    height: 100px;
+    overflow: hidden;
+  }
+
+  div.logo img {
+    margin: 0 -7.5% -16%;
+    width: 65%;
+    opacity: 0.6;
+  }
+
+  div#info p {
+    line-height: 1.5;
+    margin-bottom: 7%;
+    font-size: 0.85em;
+  }
+
+  div#reservations_wrapper {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    margin-top: 100%;
+    transition: all 2s ease;
+
+    display: none;
+  }
+
+  div.bookenda {
+    margin: 20% 25%;
+  }
+
+  div#bookenda_script_tag_mvcbooker_1row {
+    color: red;
+  }
+
+  button#ypdine_1row_btnFind {
+    color: white;
+    background-color: red;
+    border: red;
+  }
+
+  #ypdine_1row_lstPersonCount,
+  #ypdine_1row_txtDateDisplay,
+  #ypdine_1row_lstTime {
+    color: red;
+  }
 
 }
