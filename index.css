@@ -13,146 +13,152 @@ body {
   overflow: hidden;
 }
 
-div.top_side_border {
-  margin: 4%;
-  border: 8px solid white;
-  border-bottom: 0px;
-  opacity: 0.4;
-  position: absolute;
-  width: 92%;
-  height: 82%;
+@media only screen and (min-device-width: 768px ) {
+
+  div.top_side_border {
+    margin: 4%;
+    border: 8px solid white;
+    border-bottom: 0px;
+    opacity: 0.4;
+    position: absolute;
+    width: 92%;
+    height: 82%;
+  }
+
+  img.slogan {
+    width: 20%;
+    position: absolute;
+    margin: 7% 5%;
+    opacity: 0.9;
+  }
+
+  nav {
+    position: absolute;
+    bottom: 13%;
+    right: 6%;
+    display: inline;
+    text-align: right;
+  }
+
+  div.bottom_left_border {
+    height: 8px;
+    background-color: white;
+    width: 32%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+
+  div.bottom_right_border {
+    height: 8px;
+    background-color: white;
+    width: 32%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+
+  div.dolly {
+    width: 32%;
+    position: relative;
+    margin-left: 33%;
+    margin-right: auto;
+    margin-top: 35%;
+  }
+
+  div.dolly img {
+    width: 100%;
+    height: 100%;
+    opacity: 0.4;
+    transition: all 2s ease;
+  }
+
+  div.dolly img:hover {
+    margin-top: -20%;
+    margin-left: 3%;
+
+  }
+
+  nav h1 {
+    position: relative;
+    opacity: 0.4;
+  }
+
+  nav h1:hover {
+    opacity: 1;
+  }
+
+  div.image_cache {
+    display: none;
+  }
+
+  div#info {
+    margin-bottom: 15%;
+    position: relative;
+    width: 100%;
+    transition: all 2s ease;
+  }
+
+  div.logo {
+    width: 100%;
+    height: 100px;
+    overflow: hidden;
+  }
+
+  div.logo img {
+    margin: 0 -7.5% -16%;
+    width: 65%;
+    opacity: 0.6;
+  }
+
+  div#info p {
+    line-height: 1.5;
+    margin-bottom: 7%;
+    font-size: 0.85em;
+  }
+
+  div#page_wrapper {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    transition: all 2s ease;
+    background-image: url(images/DollysBackground1.jpg);
+    background-size: 85%;
+    background-position: 55% 55%,
+                         top;
+    background-attachment: fixed;
+  }
+
+  div#reservations_wrapper {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    margin-top: 100%;
+    transition: all 2s ease;
+  }
+
+  div.bookenda {
+    margin: 20% 25%;
+  }
+
+  div#bookenda_script_tag_mvcbooker_1row {
+    color: red;
+  }
+
+  button#ypdine_1row_btnFind {
+    color: white;
+    background-color: red;
+    border: red;
+  }
+
+  #ypdine_1row_lstPersonCount,
+  #ypdine_1row_txtDateDisplay,
+  #ypdine_1row_lstTime {
+    color: red;
+  }
+
 }
 
-img.slogan {
-  width: 20%;
-  position: absolute;
-  margin: 7% 5%;
-  opacity: 0.9;
-}
+@media only screen and (max-device-width: 767px ) {
 
-nav {
-  position: absolute;
-  bottom: 13%;
-  right: 6%;
-  display: inline;
-  text-align: right;
-}
-
-div.bottom_left_border {
-  height: 8px;
-  background-color: white;
-  opacity: 0.4;
-  width: 30%;
-  position: absolute;
-  bottom: 10.4%;
-  left: 4.6%;
-}
-
-div.bottom_right_border {
-  height: 8px;
-  background-color: white;
-  opacity: 0.4;
-  width: 30%;
-  position: absolute;
-  bottom: 10.4%;
-  right: 4.6%;
-}
-
-div.dolly {
-  width: 32%;
-  position: relative;
-  margin-left: 33%;
-  margin-right: auto;
-  margin-top: 35%;
-}
-
-div.dolly img {
-  width: 100%;
-  height: 100%;
-  opacity: 0.4;
-  transition: all 2s ease;
-}
-
-div.dolly img:hover {
-  margin-top: -20%;
-  margin-left: 3%;
-
-}
-
-nav h1 {
-  position: relative;
-  opacity: 0.4;
-}
-
-nav h1:hover {
-  opacity: 1;
-}
-
-div.image_cache {
-  display: none;
-}
-
-div#info {
-  margin-bottom: 15%;
-  position: relative;
-  width: 100%;
-  transition: all 2s ease;
-}
-
-div.logo {
-  width: 100%;
-  height: 100px;
-  overflow: hidden;
-}
-
-div.logo img {
-  margin: 0 -7.5% -16%;
-  width: 65%;
-  opacity: 0.6;
-}
-
-div#info p {
-  line-height: 1.5;
-  margin-bottom: 7%;
-  font-size: 0.85em;
-}
-
-div#page_wrapper {
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  transition: all 2s ease;
-  background-image: url(images/DollysBackground1.jpg);
-  background-size: 85%;
-  background-position: 55% 55%,
-                       top;
-  background-attachment: fixed;
-}
-
-div#reservations_wrapper {
-  position: relative;
-  height: 100%;
-  width: 100%;
-  margin-top: 100%;
-  transition: all 2s ease;
-}
-
-div.bookenda {
-  margin: 20% 25%;
-}
-
-div#bookenda_script_tag_mvcbooker_1row {
-  color: red;
-}
-
-button#ypdine_1row_btnFind {
-  color: white;
-  background-color: red;
-  border: red;
-}
-
-#ypdine_1row_lstPersonCount,
-#ypdine_1row_txtDateDisplay,
-#ypdine_1row_lstTime {
-  color: red;
 }
