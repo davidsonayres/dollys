@@ -12,6 +12,7 @@ body {
   position: absolute;
   overflow: hidden;
   background-color: black;
+  border: 20px solid white;
 }
 
 div#slogan {
