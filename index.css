@@ -173,7 +173,9 @@ div#slogan {
 
   div.top_side_border,
   div.bottom_left_border,
-  div.bottom_right_border {
+  div.bottom_right_border,
+  div.bookenda,
+  div.logo {
     display: none;
   }
 
@@ -212,21 +214,16 @@ div#slogan {
   }
 
   img.slogan {
-    /*width: 30%;*/
-    width: 20%;
+    width: 30%;
     position: relative;
-    /*margin: 0 3%;*/
-    margin: -5% auto -6%;
+    margin: 0 3%;
   }
 
   div.dolly {
     width: 90%;
     position: absolute;
-    /*bottom: -45%;
-    left: 5%;*/
-
-    bottom: -62%;
-    right: -25%;
+    bottom: -45%;
+    left: 5%;
     transition: all 2s ease;
   }
 
@@ -239,7 +236,7 @@ div#slogan {
 
   nav {
     position: absolute;
-    /*display: none;*/
+    display: none;
     text-align: left;
     bottom: 12%;
     left: 4%;
@@ -251,8 +248,36 @@ div#slogan {
     opacity: 0.4;
   }
 
-  div.image_cache {
-    display: none;
+  nav h1:hover {
+    opacity: 1;
+  }
+
+  div#reservations_wrapper {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    margin-top: 200%;
+    transition: all 2s ease;
+  }
+
+  div.bookenda_mobile {
+    margin: 40% 20%;
+  }
+
+  div#bookenda_script_tag_mvcbooker_1col {
+    color: red;
+  }
+
+  button#ypdine_1col_btnFind {
+    color: white;
+    background-color: red;
+    border: red;
+  }
+
+  #ypdine_1col_lstPersonCount,
+  #ypdine_1col_txtDateDisplay,
+  #ypdine_1col_lstTime {
+    color: red;
   }
 
   div#info {
@@ -262,52 +287,14 @@ div#slogan {
     transition: all 2s ease;
   }
 
-  div.logo {
-    width: 100%;
-    height: 100px;
-    overflow: hidden;
-  }
-
-  div.logo img {
-    margin: 0 -7.5% -16%;
-    width: 65%;
-    opacity: 0.6;
+  div.image_cache {
+    display: none;
   }
 
   div#info p {
     line-height: 1.5;
     margin-bottom: 7%;
     font-size: 0.85em;
-  }
-
-  div#reservations_wrapper {
-    position: relative;
-    height: 100%;
-    width: 100%;
-    margin-top: 100%;
-    transition: all 2s ease;
-
-    display: none;
-  }
-
-  div.bookenda {
-    margin: 20% 25%;
-  }
-
-  div#bookenda_script_tag_mvcbooker_1row {
-    color: red;
-  }
-
-  button#ypdine_1row_btnFind {
-    color: white;
-    background-color: red;
-    border: red;
-  }
-
-  #ypdine_1row_lstPersonCount,
-  #ypdine_1row_txtDateDisplay,
-  #ypdine_1row_lstTime {
-    color: red;
   }
 
 }
