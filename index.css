@@ -12,7 +12,6 @@ body {
   position: absolute;
   overflow: hidden;
   background-color: black;
-  border: 20px solid white;
 }
 
 div#slogan {
@@ -20,7 +19,7 @@ div#slogan {
   position: absolute;
 }
 
-@media (min-device-width: 768px ) {
+@media (min-width: 768px ) {
 
   div.menu_button {
     display: none;
@@ -170,7 +169,7 @@ div#slogan {
 
 }
 
-@media (max-device-width: 767px ) {
+@media (max-width: 767px ) {
 
   div.top_side_border,
   div.bottom_left_border,
@@ -185,9 +184,8 @@ div#slogan {
     width: 100%;
     transition: all 2s ease;
     background-image: url(images/DollysBackground1.jpg);
-    background-size: 170%;
-    background-position: 39% 0%,
-                         center;
+    background-size: 100%;
+    background-position: -7em -5%;
     background-attachment: fixed;
     background-repeat: no-repeat;
     overflow: hidden;
@@ -240,7 +238,7 @@ div#slogan {
     text-align: left;
     bottom: 12%;
     left: 4%;
-    font-size: 2.75em;
+    /*font-size: 2.75em;*/
     transition: all 2s ease;
   }
 
