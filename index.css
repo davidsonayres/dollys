@@ -19,6 +19,8 @@ div#slogan {
   position: absolute;
 }
 
+
+/* BROWSER */
 @media (min-width: 768px ) {
 
   div.menu_button {
@@ -148,34 +150,36 @@ div#slogan {
   }
 
   div.bookenda {
-    margin: 20% 25%;
+    margin: 20% auto;
   }
 
-  div#bookenda_script_tag_mvcbooker_1row {
+  div#bookenda_script_tag_mvcbooker_1col {
     color: red;
+    margin-left: auto;
+    margin-right: auto;
   }
 
-  button#ypdine_1row_btnFind {
+  button#ypdine_1col_btnFind {
     color: white;
     background-color: red;
     border: red;
   }
 
-  #ypdine_1row_lstPersonCount,
-  #ypdine_1row_txtDateDisplay,
-  #ypdine_1row_lstTime {
+  #ypdine_1col_lstPersonCount,
+  #ypdine_1col_txtDateDisplay,
+  #ypdine_1col_lstTime {
     color: red;
   }
 
 }
 
+/* MOBILE */
 @media (max-width: 767px ) {
 
   div.top_side_border,
   div.bottom_left_border,
   div.bottom_right_border,
-  div.logo,
-  div#reservations_wrapper {
+  div.logo {
     display: none;
   }
 
@@ -239,7 +243,6 @@ div#slogan {
     text-align: left;
     bottom: 12%;
     left: 4%;
-    /*font-size: 2.75em;*/
     transition: all 2s ease;
   }
 
@@ -260,8 +263,8 @@ div#slogan {
     transition: all 2s ease;
   }
 
-  div.bookenda_mobile {
-    margin: 40% 20%;
+  div.bookenda {
+    margin: auto;
   }
 
   div#bookenda_script_tag_mvcbooker_1col {

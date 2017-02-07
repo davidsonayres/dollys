@@ -58,7 +58,7 @@ $j(function() {
       $j("#info").load("menus.html");
       $j('#page_wrapper').css('background-size', 'contain');
       $j('#page_wrapper').css('background-position', 'center');
-      $j('#reservations_wrapper').css('display', 'inline-block');
+      $j('#reservations_wrapper').css('display', 'block');
     });
 
     $j('#contact').on('click', function() {
@@ -69,10 +69,7 @@ $j(function() {
     });
 
     $j('#reservations').on('click', function() {
-      $j('div.bookenda script').attr('id', 'bookenda_script_tag_mvcbooker_1col');
-      $j('div.bookenda script').attr('src', "https://www.bookenda.com/Public/MVCBooker.aspx?format=1Col&name=dollys-mojito-bar&Language=en&idClientApplication=6744&force=true");
-      $j("#reservations_wrapper").load(" #reservations_wrapper>*","");
-      $j('#reservations_wrapper').css('margin-top', 0);
+      $j('#reservations_wrapper').css('margin-top', '25%');
       $j('#page_wrapper').css('filter', 'blur(3px)')
     });
 
