@@ -49,25 +49,29 @@ $j(function() {
     $j('#hours').on('click', function() {
       $j('#page_wrapper').css('background-image', 'url("images/DollysBackground5.jpg")');
       $j("#info").load("hours.html");
-      $j('#page_wrapper').css('background-size', 'contain')
+      $j('#page_wrapper').css('background-size', 'contain');
+      $j('#page_wrapper').css('background-position', 'center');
     });
 
     $j('#menus').on('click', function() {
       $j('#page_wrapper').css('background-image', 'url("images/DollysBackground6.jpg")');
       $j("#info").load("menus.html");
-      $j('#page_wrapper').css('background-size', 'contain')
+      $j('#page_wrapper').css('background-size', 'contain');
+      $j('#page_wrapper').css('background-position', 'center');
+      $j('#reservations_wrapper').css('display', 'inline-block');
     });
 
     $j('#contact').on('click', function() {
       $j('#page_wrapper').css('background-image', 'url("images/DollysBackground7.jpg")');
       $j("#info").load("contact.html");
-      $j('#page_wrapper').css('background-size', 'contain')
+      $j('#page_wrapper').css('background-size', 'contain');
+      $j('#page_wrapper').css('background-position', 'center');
     });
 
     $j('#reservations').on('click', function() {
       $j('div.bookenda script').attr('id', 'bookenda_script_tag_mvcbooker_1col');
       $j('div.bookenda').attr('src', 'https://www.bookenda.com/Public/MVCBooker.aspx?format=1Col&name=dollys-mojito-bar&Language=en&idClientApplication=6744&force=true');
-      $j(document).getElementById("#bookenda").contentWindow.location.reload(true);
+      // $j(document).getElementById("#reservations_wrapper").contentWindow.location.reload(true);
       $j('#reservations_wrapper').css('margin-top', 0);
       $j('#page_wrapper').css('filter', 'blur(3px)')
     });
