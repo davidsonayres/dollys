@@ -71,7 +71,7 @@ $j(function() {
     $j('#reservations').on('click', function() {
       $j('div.bookenda script').attr('id', 'bookenda_script_tag_mvcbooker_1col');
       $j('div.bookenda script').attr('src', "https://www.bookenda.com/Public/MVCBooker.aspx?format=1Col&name=dollys-mojito-bar&Language=en&idClientApplication=6744&force=true");
-      $j("#reservations_wrapper").load(location.href + "#reservations_wrapper");
+      $j("#reservations_wrapper").load(" #reservations_wrapper>*","");
       $j('#reservations_wrapper').css('margin-top', 0);
       $j('#page_wrapper').css('filter', 'blur(3px)')
     });
