@@ -20,16 +20,19 @@ $j(function() {
   if (document.documentElement.clientWidth >= 768) {
     $j('#hours').on('click', function() {
       $j('#page_wrapper').css('background-image', 'url("images/DollysBackground2.jpg")');
+      $j('#page_wrapper').css('background-size', '100%');
       $j("#info").load("hours.html");
     });
 
     $j('#menus').on('click', function() {
       $j('#page_wrapper').css('background-image', 'url("images/DollysBackground3.jpg")');
+      $j('#page_wrapper').css('background-size', '100%');
       $j("#info").load("menus.html");
     });
 
     $j('#contact').on('click', function() {
       $j('#page_wrapper').css('background-image', 'url("images/DollysBackground4.jpg")');
+      $j('#page_wrapper').css('background-size', '100%');
       $j("#info").load("contact.html");
     });
 

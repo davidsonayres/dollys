@@ -139,6 +139,7 @@ div#slogan {
     background-position: 55% 55%,
                          top;
     background-attachment: fixed;
+    background-repeat: no-repeat;
   }
 
   div#reservations_wrapper {
