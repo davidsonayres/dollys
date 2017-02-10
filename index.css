@@ -200,20 +200,21 @@ div#slogan {
 
   div#slogan {
     height: 10%;
-    margin: 10% auto auto 10%;
+    margin: 7% auto auto 7%;
   }
 
   div#menu_button {
     width: 12%;
-    height: 60%;
+    height: 38px;
     position: relative;
     display: inline-block;
+    margin-right: 5px;
   }
 
   div#menu_button div {
     width: 100%;
     height: 15%;
-    margin-bottom: 14%;
+    margin: 14%;
     background-color: white;
     border-radius: 100px;
   }
@@ -221,7 +222,7 @@ div#slogan {
   img.slogan {
     width: 30%;
     position: relative;
-    margin: 0 3%;
+    transition: all 1s;
   }
 
   div.dolly {
