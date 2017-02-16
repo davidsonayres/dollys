@@ -135,7 +135,7 @@ div#slogan {
     width: 100%;
     transition: all 2s ease;
     background-image: url(images/DollysBackground1.jpg);
-    background-size: 85%;
+    background-size: 100%;
     background-position: 55% 55%,
                          top;
     background-attachment: fixed;
@@ -190,8 +190,8 @@ div#slogan {
     width: 100%;
     transition: all 2s ease;
     background-image: url(images/DollysBackground1.jpg);
-    background-size: 170%;
-    background-position: 35% -5%,
+    background-size: 160%;
+    background-position: 40% 0,
                          top;
     background-attachment: fixed;
     background-repeat: no-repeat;
