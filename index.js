@@ -49,19 +49,19 @@ $j(function() {
     $j('#hours').on('click', function() {
       $j('#page_wrapper').css('background-image', 'url("images/DollysBackground5.jpg")');
       $j("#info").load("hours.html");
-      $j('#page_wrapper').css('background-size', '100% 100%');
+      $j('#page_wrapper').css('background-size', '100%');
     });
 
     $j('#menus').on('click', function() {
       $j('#page_wrapper').css('background-image', 'url("images/DollysBackground6.jpg")');
       $j("#info").load("menus.html");
-      $j('#page_wrapper').css('background-size', '100% 100%');
+      $j('#page_wrapper').css('background-size', '100%');
     });
 
     $j('#contact').on('click', function() {
       $j('#page_wrapper').css('background-image', 'url("images/DollysBackground7.jpg")');
       $j("#info").load("contact.html");
-      $j('#page_wrapper').css('background-size', '100% 100%');
+      $j('#page_wrapper').css('background-size', '100%');
     });
 
     $j('#reservations').on('click', function() {

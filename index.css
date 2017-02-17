@@ -21,7 +21,7 @@ div#slogan {
 
 
 /* BROWSER */
-@media (min-width: 501px) {
+@media (min-width: 768px) {
 
   div.menu_button {
     display: none;
@@ -175,7 +175,7 @@ div#slogan {
 }
 
 /* MOBILE */
-@media (max-width: 500px) {
+@media (max-width: 767px) {
 
   div.top_side_border,
   div.bottom_left_border,
