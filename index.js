@@ -2,7 +2,7 @@ var $j = jQuery.noConflict();
 
 $j(function() {
 
-  if ((document.documentElement.clientWidth < 768) && (window.innerHeight > window.innerWidth)) {
+  if ((document.documentElement.clientWidth < 768) && (window.innerHeight < window.innerWidth)) {
     $j('#menu_button').on('click', function() {
       $j('div.dolly').css('left', '-18%');
       $j('div.dolly').css('bottom', '-61%');
