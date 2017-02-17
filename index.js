@@ -76,5 +76,14 @@ $j(function() {
         $j('#reservations_wrapper').css('margin-top', '200%');
         $j('#page_wrapper').css('filter', 'blur(0px)');
     });
+
+    $j('img.slogan').on('click', function() {
+      $j('div.dolly').css('left', '5%');
+      $j('div.dolly').css('bottom', '-45%');
+      $j('img.slogan').attr('src', 'images/Dollys_Logo.svg');
+      $j('img.slogan').css('width', '20%');
+      $j('img.slogan').css('margin', '-5% auto -6%');
+      $j('nav').css('display', 'none');
+    });
   };
 })
