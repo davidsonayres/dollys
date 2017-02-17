@@ -1,9 +1,5 @@
 var $j = jQuery.noConflict();
 
-window.onOrientationChange = function() {
-  window.location.reload();
-};
-
 $j(function() {
 
   if ((document.documentElement.clientWidth < 768) && (window.innerHeight < window.innerWidth)) {
