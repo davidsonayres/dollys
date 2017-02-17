@@ -1,11 +1,15 @@
 var $j = jQuery.noConflict();
 
+window.onOrientationChange = function() {
+  window.location.reload();
+};
+
 $j(function() {
 
   if ((document.documentElement.clientWidth < 768) && (window.innerHeight < window.innerWidth)) {
     $j('#menu_button').on('click', function() {
       $j('div.dolly').css('left', '-18%');
-      $j('div.dolly').css('bottom', '-61%');
+      $j('div.dolly').css('bottom', '-72%');
       $j('img.slogan').attr('src', 'images/Dollys_Logo.svg');
       $j('img.slogan').css('width', '20%');
       $j('img.slogan').css('margin', '-5% auto -6%');
