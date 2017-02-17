@@ -304,3 +304,135 @@ div#slogan {
   }
 
 }
+
+/* MOBILE - LANDSCAPE */
+@media (max-width: 767px) and (orientation: landscape){
+
+  div.top_side_border,
+  div.bottom_left_border,
+  div.bottom_right_border,
+  div.logo {
+    display: none;
+  }
+
+  div#page_wrapper {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    transition: all 2s ease;
+    background-image: url(images/DollysBackground1.jpg);
+    background-size: 100%;
+    background-position: top;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    overflow: hidden;
+  }
+
+  div#slogan {
+    height: 8%;
+    margin: 4% auto auto 4%;
+  }
+
+  div#menu_button {
+    width: 12%;
+    height: 38px;
+    position: relative;
+    display: inline-block;
+    margin-right: 5px;
+  }
+
+  div#menu_button div {
+    width: 100%;
+    height: 15%;
+    margin: 14%;
+    margin-top: 0;
+    background-color: white;
+    border-radius: 100px;
+  }
+
+  img.slogan {
+    width: 30%;
+    position: relative;
+    transition: all 1s;
+  }
+
+  div.dolly {
+    width: 45%;
+    position: absolute;
+    bottom: -50%;
+    left: 27.5%;
+    transition: all 2s ease;
+  }
+
+  div.dolly img {
+    width: 100%;
+    height: 100%;
+    opacity: 0.4;
+    transition: all 2s ease;
+  }
+
+  nav {
+    position: absolute;
+    display: none;
+    text-align: right;
+    bottom: 5%;
+    right: 5%;
+    transition: all 2s ease;
+  }
+
+  nav h1 {
+    position: relative;
+    opacity: 0.4;
+    font-size: 1.3em;
+  }
+
+  nav h1:hover {
+    opacity: 1;
+  }
+
+  div#reservations_wrapper {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    margin-top: 200%;
+    transition: all 2s ease;
+  }
+
+  div.bookenda {
+    margin: auto;
+  }
+
+  div#bookenda_script_tag_mvcbooker_1col {
+    color: red;
+  }
+
+  button#ypdine_1col_btnFind {
+    color: white;
+    background-color: red;
+    border: red;
+  }
+
+  #ypdine_1col_lstPersonCount,
+  #ypdine_1col_txtDateDisplay,
+  #ypdine_1col_lstTime {
+    color: red;
+  }
+
+  div#info {
+    margin-bottom: 15%;
+    position: relative;
+    width: 100%;
+    transition: all 2s ease;
+  }
+
+  div.image_cache {
+    display: none;
+  }
+
+  div#info p {
+    line-height: 1.5;
+    margin-bottom: 7%;
+    font-size: 0.85em;
+  }
+
+}
