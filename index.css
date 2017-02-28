@@ -200,28 +200,23 @@ div#slogan {
 
   div#slogan {
     height: 10%;
-    margin: 7% auto auto 7%;
+    margin: 4% auto auto 5%;
   }
 
   div#menu_button {
     width: 12%;
     height: 38px;
     position: relative;
-    display: inline-block;
+    display: inline;
     margin-right: 5px;
-  }
-
-  div#menu_button div {
-    width: 100%;
-    height: 15%;
-    margin: 14%;
-    background-color: white;
-    border-radius: 100px;
+    text-align: center;
+    font-size: 1.9em;
   }
 
   img.slogan {
     width: 30%;
-    position: relative;
+    position: absolute;
+    top: 5%;
     transition: all 1s;
   }
 
@@ -245,7 +240,7 @@ div#slogan {
     display: none;
     text-align: left;
     bottom: 12%;
-    left: 4%;
+    left: 5%;
     transition: all 2s ease;
   }
 
