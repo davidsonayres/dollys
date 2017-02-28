@@ -23,7 +23,7 @@ div#slogan {
 /* BROWSER */
 @media (min-width: 768px) {
 
-  div.menu_button {
+  div#menu_button {
     display: none;
   }
 
